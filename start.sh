@@ -10,6 +10,6 @@ if [ ! -f $POLEMARCH_SETTINGS_FILE ]; then
   cp /root/settings.ini.dist $POLEMARCH_SETTINGS_FILE
 fi
 
-/usr/local/bin/polemarchctl migrate
+/opt/polemarch/bin/polemarchctl migrate
 
 exec /usr/bin/supervisord -c /etc/supervisord.conf
